@@ -62,6 +62,14 @@
             <id>pluto-embedded</id>
             <build>
                 <plugins>
+                 <groupId>org.apache.tomcat.maven</groupId>
+                   <artifactId>tomcat7-maven-plugin</artifactId>
+                     <version>2.0</version>
+                     <configuration>
+                     <url>http://localhost:8080/manager/text</url>
+                     <path>/rps</path>
+                 </configuration>
+                </plugin>
                     <!-- configure maven-war-plugin to use updated web.xml -->
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -88,4 +96,16 @@
             </build>
         </profile>
     </profiles>
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>DESKTOP-3GOCCBK-releases</name>
+        <url>http://localhost:8081/artifactory/Sateesh</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>DESKTOP-3GOCCBK-snapshots</name>
+        <url>http://localhost:8081/artifactory/Sateesh</url>
+    </snapshotRepository>
+</distributionManagement>
 </project>
