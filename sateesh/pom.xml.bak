@@ -46,7 +46,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>sateesh00143</groupId>
+                <groupId>testgroup1</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${plugin.compiler.version}</version>
                 <configuration>
