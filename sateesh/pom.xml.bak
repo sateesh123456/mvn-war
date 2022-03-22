@@ -47,7 +47,7 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-		<artifactId>maven-compiler-plugin</artifactId>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <version>{plugin.compiler.version}</version>
                 <configuration>
                     <source>1.8</source>
@@ -62,7 +62,7 @@
             <id>pluto-embedded</id>
             <build>
                 <plugins>
-                    <!-- configure maven-war-plugin to use updated web.xml -->
+                    <!-- configure maven-war-plugin to use updated web.xml -->org.apache.maven.plugins
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-war-plugin</artifactId>
@@ -91,7 +91,7 @@
 	<distributionManagement>
     <repository>
         <id>central</id>
-        <name>sateesh00143</name>
+        <name>DESKTOP-3GOCCBK-releases</name>
         <url>http://localhost:8081/artifactory/Sateesh</url>
     </repository>
     <snapshotRepository>
